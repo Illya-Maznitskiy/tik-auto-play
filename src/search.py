@@ -1,11 +1,14 @@
 from playwright.sync_api import Page, expect
 from logs.logger import logger
-from config import DEFAULT_SEARCH_QUERY
+from src.config import DEFAULT_SEARCH_QUERY
 import time
 
 
 def perform_search(page: Page, query: str = DEFAULT_SEARCH_QUERY):
     """Performs a search on TikTok using the given query."""
+    if not query:
+        query = DEFAULT_SEARCH_QUERY
+
     logger.info(f"Starting search for query: '{query}'")
 
     try:
