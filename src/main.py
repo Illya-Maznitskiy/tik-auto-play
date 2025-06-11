@@ -1,9 +1,9 @@
 import time
 
-from auth import (
+from src.auth import (
     get_authenticated_page_and_context,
 )
-from search import perform_search
+from src.search import perform_search
 from logs.logger import logger
 from src.viewer import watch_tiktok_feed
 
