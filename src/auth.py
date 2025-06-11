@@ -6,7 +6,7 @@ from playwright.sync_api import (
     BrowserContext,
     Playwright,
 )
-from config import STORAGE_STATE_PATH
+from src.config import STORAGE_STATE_PATH
 from logs.logger import logger
 
 
